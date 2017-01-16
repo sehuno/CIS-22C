@@ -1,0 +1,12 @@
+Anaheim, Los Angeles
+Anaheim, Long Beach
+Fresno, Sacramento
+Fresno, San Jose
+Fresno, Los Angeles
+Fresno, San Luis Obispo
+San Francisco, Sacramento
+San Francisco, Palo Alto
+San Jose, Palo Alto
+San Jose, Los Angeles
+San Jose, San Luis Obispo
+Long Beach, Los Angeles

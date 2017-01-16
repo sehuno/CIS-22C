@@ -1,0 +1,339 @@
+------------------------
+Euler Circuit Program
+------------------------
+available commands
+> load			load from file
+> add [options]
+>> add			add single edge / start blank graph when none
+>> add lr		add last removed edge
+>> add allr		add all removed edges
+> show [options]
+>> show table		show adjacency table
+>> show circuit		show graph's euler circuit
+>> show br trav		breadth first traversal
+>> show dep trav	depth traversal
+> delete		delete edge from graph
+> euler			find eulers path
+> clear			clear graph
+> undo			undo last action
+> save			save to file
+> quit			quit
+> help			show this text again
+
+
+> clear
+no graph to clear
+> euler
+can't euler on empty graph
+> show table
+no graph
+> load
+> load > filepath >
+error - can't open file
+> add
+no graph found, blank created
+> add > src vertex > ABC
+> add > dest vertex > DEF
+successfully added edge
+> undo
+success - added edge removed
+> show table
+------------------------
+Adj List for ABC:
+Adj List for DEF:
+
+> euler
+can't euler on empty graph
+> show circuit
+please run the euler command first
+> show br trav
+no graph
+> show dep trav
+no graph
+> undo
+nothing to undo
+> clear
+graph cleared
+>
+>
+> load
+> load > filepath > eastcoast.txt
+successfully loaded
+> euler
+> euler > enter start vtx > Rochester
+found!
+Rochester -> Baltimore
+Baltimore -> Washington
+Washington -> Philadelphia
+Philadelphia -> Buffalo
+Buffalo -> Baltimore
+Baltimore -> Pittsburgh
+Pittsburgh -> Washington
+Washington -> Buffalo
+Buffalo -> Syracuse
+Syracuse -> Hamilton
+Hamilton -> New York
+New York -> Albany
+Albany -> Pittsburgh
+Pittsburgh -> Buffalo
+Buffalo -> Rochester
+>
+>
+> save
+> save > filepath > /Users/sehun/Desktop/test.txt
+successfully wrote file
+> undo
+nothing to undo
+> quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------
+Euler Circuit Program
+------------------------
+available commands
+> load			load from file
+> add [options]
+>> add			add single edge / start blank graph when none
+>> add lr		add last removed edge
+>> add allr		add all removed edges
+> show [options]
+>> show table		show adjacency table
+>> show circuit		show graph's euler circuit
+>> show br trav		breadth first traversal
+>> show dep trav	depth traversal
+> delete		delete edge from graph
+> euler			find eulers path
+> clear			clear graph
+> undo			undo last action
+> save			save to file
+> quit			quit
+> help			show this text again
+
+
+> load
+> load > filepath > westcoast.txt
+successfully loaded
+>
+> show table
+------------------------
+Adj List for San Francisco: Sacramento(0.0) Palo Alto(0.0)
+Adj List for Sacramento: San Francisco(0.0) Fresno(0.0)
+Adj List for San Jose: Fresno(0.0) San Luis Obispo(0.0) Palo Alto(0.0) Los Angeles(0.0)
+Adj List for Fresno: Sacramento(0.0) San Jose(0.0) San Luis Obispo(0.0) Los Angeles(0.0)
+Adj List for Anaheim: Long Beach(0.0) Los Angeles(0.0)
+Adj List for Palo Alto: San Francisco(0.0) San Jose(0.0)
+Adj List for San Luis Obispo: San Jose(0.0) Fresno(0.0)
+Adj List for Long Beach: Anaheim(0.0) Los Angeles(0.0)
+Adj List for Los Angeles: San Jose(0.0) Fresno(0.0) Anaheim(0.0) Long Beach(0.0)
+
+> delete
+> delete > src vertex > Los Angeles
+> delete > dest vertex > San Jose
+successfully removed edge
+>
+> delete
+> delete > src vertex > San Francisco
+> delete > dest vertex > Sacramento
+successfully removed edge
+>
+> delete
+> delete > src vertex > asdf
+> delete > dest vertex > asdf
+remove failed
+> undo
+can't undo a nonexistent remove
+> add allr
+all removed edges added back
+> show table
+------------------------
+Adj List for San Francisco: Sacramento(0.0) Palo Alto(0.0)
+Adj List for Sacramento: San Francisco(0.0) Fresno(0.0)
+Adj List for San Jose: Fresno(0.0) San Luis Obispo(0.0) Palo Alto(0.0) Los Angeles(0.0)
+Adj List for asdf: asdf(0.0)
+Adj List for Fresno: Sacramento(0.0) San Jose(0.0) San Luis Obispo(0.0) Los Angeles(0.0)
+Adj List for Anaheim: Long Beach(0.0) Los Angeles(0.0)
+Adj List for Palo Alto: San Francisco(0.0) San Jose(0.0)
+Adj List for San Luis Obispo: San Jose(0.0) Fresno(0.0)
+Adj List for Long Beach: Anaheim(0.0) Los Angeles(0.0)
+Adj List for Los Angeles: San Jose(0.0) Fresno(0.0) Anaheim(0.0) Long Beach(0.0)
+>
+> load
+> load > filepath > westcoast.tt
+error - can't open file
+> load
+> load > filepath > westcoast.txt
+successfully loaded
+> show br trav
+> starting vertex > Los Angeles
+Los Angeles
+San Jose
+Fresno
+Anaheim
+Long Beach
+San Luis Obispo
+Palo Alto
+Sacramento
+San Francisco
+>
+>
+> show dep trav
+> starting vertex > Los Angeles
+Los Angeles
+San Jose
+Fresno
+Sacramento
+San Francisco
+Palo Alto
+San Luis Obispo
+Anaheim
+Long Beach
+>
+>
+> delete
+> delete > src vertex > Los Angeles
+> delete > dest vertex > Sacramento
+remove failed
+>
+>
+> delete
+> delete > src vertex > Los Angeles
+> delete > dest vertex > Anaheim
+successfully removed edge
+>
+>
+>
+> undo
+nothing to undo
+> add lr
+last removed edge added back
+> undo
+was last removed is now, is last removed
+> show table
+------------------------
+Adj List for San Francisco: Sacramento(0.0) Palo Alto(0.0)
+Adj List for Sacramento: San Francisco(0.0) Fresno(0.0)
+Adj List for San Jose: Fresno(0.0) San Luis Obispo(0.0) Palo Alto(0.0) Los Angeles(0.0)
+Adj List for Fresno: Sacramento(0.0) San Jose(0.0) San Luis Obispo(0.0) Los Angeles(0.0)
+Adj List for Anaheim: Long Beach(0.0)
+Adj List for Palo Alto: San Francisco(0.0) San Jose(0.0)
+Adj List for San Luis Obispo: San Jose(0.0) Fresno(0.0)
+Adj List for Long Beach: Anaheim(0.0) Los Angeles(0.0)
+Adj List for Los Angeles: San Jose(0.0) Fresno(0.0) Long Beach(0.0)
+
+> load
+> load > filepath > westcoast.txt
+successfully loaded
+> euler
+> euler > enter start vtx >
+no vertex specified for circuit, randomly chose San Francisco
+San Francisco -> Sacramento
+Sacramento -> Fresno
+Fresno -> San Jose
+San Jose -> San Luis Obispo
+San Luis Obispo -> Fresno
+Fresno -> Los Angeles
+Los Angeles -> Anaheim
+Anaheim -> Long Beach
+Long Beach -> Los Angeles
+Los Angeles -> San Jose
+San Jose -> Palo Alto
+Palo Alto -> San Francisco
+>
+>
+> show circuit
+San Francisco -> Sacramento
+Sacramento -> Fresno
+Fresno -> San Jose
+San Jose -> San Luis Obispo
+San Luis Obispo -> Fresno
+Fresno -> Los Angeles
+Los Angeles -> Anaheim
+Anaheim -> Long Beach
+Long Beach -> Los Angeles
+Los Angeles -> San Jose
+San Jose -> Palo Alto
+Palo Alto -> San Francisco
+>
+>
+> euler
+> euler > enter start vtx > Los Angeles
+found!
+Los Angeles -> San Jose
+San Jose -> Fresno
+Fresno -> Sacramento
+Sacramento -> San Francisco
+San Francisco -> Palo Alto
+Palo Alto -> San Jose
+San Jose -> San Luis Obispo
+San Luis Obispo -> Fresno
+Fresno -> Los Angeles
+Los Angeles -> Anaheim
+Anaheim -> Long Beach
+Long Beach -> Los Angeles
+>
+>
+> show circuit
+Los Angeles -> San Jose
+San Jose -> Fresno
+Fresno -> Sacramento
+Sacramento -> San Francisco
+San Francisco -> Palo Alto
+Palo Alto -> San Jose
+San Jose -> San Luis Obispo
+San Luis Obispo -> Fresno
+Fresno -> Los Angeles
+Los Angeles -> Anaheim
+Anaheim -> Long Beach
+Long Beach -> Los Angeles
+>
+> delete
+> delete > src vertex > San Jose
+> delete > dest vertex > Fresno
+successfully removed edge
+>
+> delete
+> delete > src vertex > Fresno
+> delete > dest vertex > Los Angeles
+successfully removed edge
+> undo
+success - deleted edge added
+> undo
+can't undo an undoing!
+>
+>
+>
+> add lr
+last removed edge added back
+> undo
+was last removed is now, is last removed
+>
+>
+> show table
+------------------------
+Adj List for San Francisco: Sacramento(0.0) Palo Alto(0.0)
+Adj List for Sacramento: San Francisco(0.0) Fresno(0.0)
+Adj List for San Jose: Palo Alto(0.0) San Luis Obispo(0.0) Los Angeles(0.0)
+Adj List for Fresno: Sacramento(0.0) San Luis Obispo(0.0) Los Angeles(0.0)
+Adj List for Anaheim: Long Beach(0.0) Los Angeles(0.0)
+Adj List for Palo Alto: San Francisco(0.0) San Jose(0.0)
+Adj List for San Luis Obispo: San Jose(0.0) Fresno(0.0)
+Adj List for Long Beach: Anaheim(0.0) Los Angeles(0.0)
+Adj List for Los Angeles: San Jose(0.0) Fresno(0.0) Anaheim(0.0) Long Beach(0.0)
+
+>
+> clear
+graph cleared
+>
+> show table
+------------------------

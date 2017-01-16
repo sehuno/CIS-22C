@@ -1,0 +1,3 @@
+javac DeAnzaContact.java BinaryNode.java BinaryTree.java BST.java TreeInterface.java
+
+java DeAnzaContact

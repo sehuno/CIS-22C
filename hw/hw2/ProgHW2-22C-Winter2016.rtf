@@ -1,0 +1,187 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf110
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\ftech\fcharset77 Symbol;\f2\fmodern\fcharset0 CourierNewPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red127\green0\blue85;\red0\green0\blue192;
+\red42\green0\blue255;\red63\green127\blue95;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid302\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+{\info
+{\title Lab Assignment #1}
+{\author LeeC}
+{\*\company De Anza College}}\margl1584\margr1584\margb1080\margt1080\vieww12800\viewh11780\viewkind1
+\deftab720
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\b\fs28 \cf0 Programming Homework Assignment #2\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\b0\fs24 \cf0 Due Date: Jan. 28, 11:55 PM \
+\pard\tx720\pardeftab720\li720\fi-360\ri0\partightenfactor0
+\ls1\ilvl0
+\f1 \cf0 \'a5	
+\f0 Upload the source files (.java files) with output (copied and pasted to the end of the main file) (see Catalyst under Week 4 for where to submit)\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \ul \ulc0 \
+Problem\ulnone :	\
+Write a Java program which completes and tests the LinkedQueue class as declared in the LinkedQueue.h file (in the Queue Code File folder on Catalyst under Week 2).  The methods that need to be completed are:\
+\pard\tx720\pardeftab720\li720\fi-360\ri0\partightenfactor0
+\ls2\ilvl0
+\f1 \cf0 \'a5	
+\f0 default constructor (inline, initialize each member variable to 0)\
+\ls2\ilvl0
+\f1 \'a5	
+\f0 enqueue\
+\ls2\ilvl0
+\f1 \'a5	
+\f0 dequeue\
+\ls2\ilvl0
+\f1 \cf2 \'a5	
+\f0 toString() (public method that returns a String that has all the data in the Queue separated by a space, BUT NOT CHANGING ANYTHING in the Queue)\cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+HINTS: The Java code for these methods will be VERY SIMILAR to the LinkedStack class, with a few changes, for example: \
+\pard\pardeftab720\li720\fi-360\ri0\partightenfactor0
+\ls3\ilvl0
+\f1 \cf0 \'a5	
+\f0 there's no topNode, but 2 reference variables instead: frontNode and backNode).  \
+\ls3\ilvl0
+\f1 \'a5	
+\f0 enqueue adds to the back of the queue, BUT you must check if it was empty (if it was, also assign the frontNode, but it not, link the new node to the old back node)\
+\ls3\ilvl0
+\f1 \'a5	
+\f0 dequeue adds removes from the front of the queue, but it becomes empty after removing it, you need to update the backNode (you should figure out to what!)\
+\ls3\ilvl0
+\f1 \'a5	
+\f0 in the toString() method (which overrides the Object toString()), DON'T call dequeue nor enqueue and DON'T change anything in the Queue, but traverse similar to the LList.java code\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\pard\tx360\pardeftab720\ri0\partightenfactor0
+\cf0 More hints will be given in class (SEE the Class Notes in Weeks 2 and 3).\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+Update the main file in the Queue Code File folder on Catalyst in the following ways:\
+\pard\pardeftab720\li855\fi-360\ri0\partightenfactor0
+\ls4\ilvl0
+\f1 \cf0 \'a5	
+\f0 change the 
+\b queueTestOperations
+\b0  method:\
+\pard\tx1620\pardeftab720\li1620\fi-405\ri0\partightenfactor0
+\ls4\ilvl1
+\f2 \cf0 o	
+\f0 it's a GENERIC method, in which the generic is for the QueueInterface generic type AND the ArrayList generic type (which is an additional parameter)\
+\ls4\ilvl1
+\f2 o	
+\f0 has a ArrayList of generic (reference) parameter\
+\ls4\ilvl1
+\f2 o	
+\f0 remove the String array (replaced by ArrayList parameter)  \
+\ls4\ilvl1
+\f2 o	
+\f0 change the for loop, to either an enhanced for loop that traverses the ArrayList parameter, OR a while loop for an Iterator \
+\ls4\ilvl1
+\f2 o	
+\f0 Add code that displays the return value of the Queue parameter's toString AFTER ENQUEUING THE WHOLE ARRAYLIST\
+\pard\pardeftab720\li855\fi-360\ri0\partightenfactor0
+\ls4\ilvl1
+\f1 \cf0 \'a5	
+\f0 change main (in the QueueDriver class): \
+\pard\tx1620\pardeftab720\li1620\fi-405\ri0\partightenfactor0
+\ls4\ilvl1
+\f2 \cf0 o	
+\f0 declare a ArrayList of Strings (fill it with at least 5 Strings, your choice)\
+\ls4\ilvl1
+\f2 o	
+\f0 declare a LinkedQueue<String> variable \
+\ls4\ilvl1
+\f2 o	
+\f0 call the 
+\b queueTestOperations
+\b0  method passing the LinkedQueue of String and ArrayList of String variables\
+\ls4\ilvl1
+\f2 o	
+\f0 declare a ArrayList of Integers (fill it with at least 5 Integers, your choice), but with a DIFFERENT size than your ArrayList of Strings\
+\ls4\ilvl1
+\f2 o	
+\f0 declare a LinkedQueue<Integer> variable\
+\ls4\ilvl1
+\f2 o	
+\f0 call the SAME 
+\b queueTestOperations
+\b0  method passing the LinkedQueue of Integer and ArrayList of Integer\
+\ls4\ilvl1
+\f2 o	
+\f0 call the 
+\b extraQueueTester
+\b0  given in BELOW\
+\pard\pardeftab720\li1575\ri0\partightenfactor0
+\cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 See test runs on Catalyst.  Test your programs using the same test values to see if you get the same results. \
+\
+DON'T USE RECURSION. \
+// CALL THE FOLLOWING AT THE END OF MAIN:\
+\pard\tx450\tx900\tx1350\tx1800\tx2250\tx2700\pardeftab720\ri0\partightenfactor0
+
+\fs20 \cf0 	
+\b \cf3 public
+\b0 \cf0  
+\b \cf3 static
+\b0 \cf0  
+\b \cf3 void
+\b0 \cf0  extraQueueTester()\
+	\{\
+		LinkedQueue<Double> doubQueue = 
+\b \cf3 new
+\b0 \cf0  LinkedQueue<>();\
+		\
+		doubQueue.enqueue(
+\b \cf3 new
+\b0 \cf0  Double(1.2));\
+		doubQueue.enqueue(
+\b \cf3 new
+\b0 \cf0  Double(8.9));\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "\\nTesting Double Queue: "\cf0 + doubQueue);\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "Testing dequeuing Double Queue: "\cf0  + \
+					doubQueue.dequeue());\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "Testing dequeuing Double Queue: "\cf0  + \
+					doubQueue.dequeue());\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "Double Queue's size is "\cf0  + doubQueue.size());\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "Testing enqueuing Double Queue after emptying: "\cf0  +\
+				doubQueue.enqueue(
+\b \cf3 new
+\b0 \cf0  Double(3.4)) );\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "Double Queue now has: "\cf0  + doubQueue);\
+		System.
+\i \cf4 out
+\i0 \cf0 .println(\cf5 "Double Queue's size is "\cf0  + doubQueue.size());\
+	\} \cf6 // end extraQueueTester\cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+
+\b\fs22 \cf0 \
+\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\fs24 \cf0 Extra Credit
+\b0  Problems (due the last day of the quarter!):  
+\fs22 (Data Structures and Abstractions with Java by Carrano) 4th Ed. p
+\fs24 .328 #2 .\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\fs22 \cf0 OR re-do Prog.HW#1 to use a Queue<String> instead of a ArrayList<String> for the tokenized postix expression.\
+}

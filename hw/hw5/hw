@@ -1,0 +1,2 @@
+javac Color.java HashSC.java HashQP.java HashTable.java Hasher.java LList.java ListInterface.java
+java Color

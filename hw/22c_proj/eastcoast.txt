@@ -1,0 +1,15 @@
+Albany, Pittsburgh
+Albany, New York
+Buffalo, Syracuse
+Buffalo, Pittsburgh
+Buffalo, Rochester
+Buffalo, Philadelphia
+Buffalo, Washington
+Baltimore, Washington
+Hamilton, Syracuse
+Rochester, Baltimore
+Baltimore, Pittsburgh
+Washington, Philadelphia
+Washington, Pittsburgh
+Hamilton, New York
+Baltimore, Buffalo
